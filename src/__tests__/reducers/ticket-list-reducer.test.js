@@ -1,4 +1,4 @@
-import { act } from 'react-dom/cjs/react-dom-test-utils.production.min';
+import * as c from './../../actions/ActionTypes'
 import ticketListReducer from '../../reducers/ticket-list-reducer';
 
 describe('ticketListReducer', () => {
@@ -31,7 +31,7 @@ describe('ticketListReducer', () => {
   test('Should successfully add new ticket data to MasterTicketList', () => {
     const { names, location, issue, id } = ticketData;
     action = {
-      type: 'ADD_TICKET',
+      type: c.ADD_TICKET,
       names: names,
       location: location, 
       issue: issue, 
@@ -50,7 +50,7 @@ describe('ticketListReducer', () => {
 
   test('should successfully delete a ticket', () => {
     action = {
-      type: 'DELETE_TICKET',
+      type: c.DELETE_TICKET,
       id: 1
     };
   expect(ticketListReducer(currentState, action)).toEqual({
