@@ -17,6 +17,7 @@ function EditTicketForm (props) {
     }
     return firestore.update({collection: 'tickets', doc: ticket.id }, propertiesToUpdate)
   }
+  
   return (
     <React.Fragment>
       <ReusableForm 
