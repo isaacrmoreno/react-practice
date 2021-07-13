@@ -1,12 +1,20 @@
-import React from "react";
 // import ticketsimage from "./../img/ticketsimage.jpg"
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Header(){
   return (
-  <React.Fragment>
-    <h1>Help Queue</h1>
-    {/* <img src={ticketsimage} alt="practice"/> */}
-  </React.Fragment>
+    <React.Fragment>
+      <h1> Help Queue</h1>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/signin">Sign In</Link>
+        </li>
+      </ul>
+    </React.Fragment>
   );
 }
 

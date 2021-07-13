@@ -2,13 +2,13 @@ import * as firebase from 'firebase';
 import 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "process.env.AIzaSyBiPqo1QrrANYWLhBgPOJvo-t7h1PLMVEM",
-  authDomain: "process.env.redux-help-queue-61632.firebaseapp.com",
-  databaseURL: "process.env.https://redux-help-queue-61632.firebaseio.com",
-  projectId: "process.env.redux-help-queue-61632",
-  storageBucket: "process.env.redux-help-queue-61632.appspot.com",
-  messagingSenderId: "process.env.361652709983",
-  appId: "process.env.1:361652709983:web:76169d3a31ff5ccc1089ea"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
 }
 
 firebase.initializeApp(firebaseConfig);
