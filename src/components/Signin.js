@@ -32,7 +32,6 @@ import firebase from "firebase/app";
       });
     }
     
-
   return (
     <React.Fragment>
       <h1>Sign up</h1>
